@@ -4,7 +4,7 @@ Go语言开发的适用于dnspod的公网域名解析记录自动更新程序（
 ## 使用方法：
 1.去腾讯云购买一个域名
 
-2.在DNSPod管理面板（https://console.dnspod.cn/account/token/token）创建一个密钥并记住
+2.在DNSPod管理面板（ https://console.dnspod.cn/account/token/token ）创建一个密钥并记住
 
 3.复制config-example.yaml，重命名为config.yaml
 
