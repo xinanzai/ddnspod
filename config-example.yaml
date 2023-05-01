@@ -1,0 +1,17 @@
+# 这个选项是给华硕路由器预留的，如果不使用华硕路由器本选项必须留空，在华硕后台左侧配置列表 - 外部网络(WAN) - DDNS选项卡下
+# 配置了DDNS之后可以将主机名称填入此项，程序会直接从华硕官网API获取指定主机的公网IP，就可以不需要必须跑在指定内网中了，
+# 别问我为什么华硕路由器有DDNS还要单独开发一个软件，他的DDNS不经常抽风的话也就不需要这个软件了 ~_~
+AsusHostname: 
+# 这里填域名DNSPod Token ID，不是 腾讯云 API 密钥
+ID: "12345"
+# 这里填域名DNSPod Token 值
+Token: b7fgdsgtrfsdg54wgrecdad38b38
+Domain:
+  # 这里填你申请的要动态更新的域名地址
+  Name: xxo.cn
+  # 这里填要动态更新的域名记录类型，A就行，别的没测试过
+  RecordType: A
+  # 这里默认为空，程序会自动更新这里的值，不需要管
+  LatestRecord: 
+  # 这里填默认
+  RecordLine: 默认
