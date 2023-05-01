@@ -1,2 +1,17 @@
 # ddnspod
 Go语言开发的适用于dnspod的公网域名解析记录自动更新程序（DDNS）
+
+## 使用方法：
+1.去腾讯云购买一个域名
+
+2.在DNSPod管理面板（https://console.dnspod.cn/account/token/token）创建一个密钥并记住
+
+3.复制config-example.yaml，重命名为config.yaml
+
+4.按照自己的信息更新其中的配置项，配置项具体配置方法在config-example.yaml中有说明
+
+5.打开cmd，运行ddnspod.exe并查看程序输出结果，如果程序log输出”IP解析记录更新成功！公网IP地址：x.x.x.x“，就去dnspod后台看看有没有成功更新
+
+6.设置对应的运行计划，按照指定频率调用程序，实现网站解析记录自动更新
+
+7.程序默认使用httpbin.org公网接口，若需要其他功能或者需要使用其他公网IP接口，自己修改源码即可
